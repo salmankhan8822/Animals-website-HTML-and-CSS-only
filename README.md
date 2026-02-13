@@ -24,4 +24,3 @@ This project focuses on clean UI design, smooth animations, and mobile responsiv
 - CSS Grid  
 - Media Queries  
 - Animations
-- 
