@@ -24,3 +24,6 @@ This project focuses on clean UI design, smooth animations, and mobile responsiv
 - CSS Grid  
 - Media Queries  
 - Animations
+
+Live preview 
+https://animals-website-html-and-css-git-main-salmankhan8822s-projects.vercel.app/
