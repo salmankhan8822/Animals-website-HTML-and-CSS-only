@@ -1,45 +1,53 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="animation.css" />
-  </head>
-  <body>
-    <section id="hero">
-      <div class="section-box">
-        <div class="content-wrap">
-          <header>
-            <a class="header-logo"><span>wild</span>guardians</a>
-            <nav>
-              <a class="nav-items active">Home</a>
-              <a class="nav-items">about us</a>
-              <a class="nav-items">projects</a>
-              <a class="nav-items">resources</a>
-              <a class="nav-items">blog</a>
-              <a class="nav-items">contacts</a>
-            </nav>
-          </header>
-          <div class="hero-content">
-            <h3>protect</h3>
-            <h1>wildanimals</h1>
-            <img src="images/uu.png" class="hero-img" />
-            <button class="hero-btn">join with us</button>
-          </div>
-        </div>
-      </div>
-    </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WildGuardians</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    <section id="about">
-      <div class="section-box">
-        <div class="content-grid">
-          <div class="left-grid">
-            <h3 class="section-sub">About us</h3>
-            <h2 class="section-title">Who we are?</h2>
+  <!-- ================= HERO ================= -->
+  <section id="hero">
+    <div class="section-box">
+      <div class="content-wrap">
+
+        <header class="d-flex flex-column flex-lg-row justify-content-between align-items-center">
+          <a class="header-logo" href="#">wild<span>guardians</span></a>
+          <nav class="d-flex flex-column flex-lg-row align-items-center gap-lg-4 gap-3">
+            <a class="nav-items active" href="#hero">Home</a>
+            <a class="nav-items" href="#about">About Us</a>
+            <a class="nav-items" href="#projects">Projects</a>
+            <a class="nav-items" href="#">Resources</a>
+            <a class="nav-items" href="#">Blog</a>
+            <a class="nav-items" href="#join-us">Contact</a>
+          </nav>
+        </header>
+
+        <div class="hero-content text-center">
+          <h3>protect</h3>
+          <h1>wildanimals</h1>
+          <img src="images/uu.png" class="hero-img" alt="Wildlife" />
+          <button class="hero-btn">join with us</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about">
+    <div class="section-box">
+      <div class="container-fluid h-100">
+        <div class="row align-items-center h-100 g-4">
+
+          <div class="col-12 col-lg-6 order-2 order-lg-1 left-grid">
+            <h3 class="section-sub">About Us</h3>
+            <h2 class="section-title">Who We Are?</h2>
             <p>
-              At WildlifeGuardians, we are committed to the preservation and
+              At WildGuardians, we are committed to the preservation and
               protection of endangered species worldwide. Our mission is to
               create awareness, provide resources for conservation efforts, and
               take direct action to save vulnerable wildlife from extinction.
@@ -50,104 +58,129 @@
             <button class="action-btn">Learn More</button>
           </div>
 
-          <div class="right-grid">
-            <img src="images/ll.png" class="about-img" />
+          <div class="col-12 col-lg-6 order-1 order-lg-2 right-grid text-center">
+            <img src="images/ll.png" class="about-img" alt="About us" />
           </div>
+
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="projects">
-      <div class="section-box">
-        <div class="content-grid">
-          <div class="right-grid">
-            <img src="images/bg.png" class="about-img" />
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects">
+    <div class="section-box">
+      <div class="container-fluid h-100">
+        <div class="row align-items-center h-100 g-4">
+
+          <div class="col-12 col-lg-6 right-grid text-center">
+            <img src="images/bg.png" class="about-img" alt="Our projects" />
           </div>
-          <div class="left-grid">
-            <h3 class="section-sub">projects</h3>
-            <h2 class="section-title">What we did?</h2>
-            <p>
-              1. Project Savannah Shield – A dedicated effort to protect the
-              last remaining herds of African elephants from poaching in Kenya’s
-              savannah.<br /><br />
 
-              2. Project Savannah Shield – A dedicated effort to protect the
-              last remaining herds of African elephants from poaching in Kenya’s
-              savannah.<br /><br />
+          <div class="col-12 col-lg-6 left-grid">
+            <h3 class="section-sub">Projects</h3>
+            <h2 class="section-title">What We Did?</h2>
 
-              3. Project Savannah Shield – A dedicated effort to protect the
-              last remaining herds of African elephants from poaching in Kenya’s
-              savannah.
-            </p>
-            <button class="action-btn">more projects</button>
+            <ul class="project-list">
+              <li>
+                <strong>Project Savannah Shield</strong> — A dedicated effort to
+                protect the last remaining herds of African elephants from
+                poaching in Kenya's savannah.
+              </li>
+              <li>
+                <strong>Project Ocean Watch</strong> — Monitoring and protecting
+                marine turtle nesting sites along vulnerable coastlines.
+              </li>
+              <li>
+                <strong>Project Rainforest Guard</strong> — Anti-deforestation
+                patrols working to preserve critical rainforest habitats.
+              </li>
+            </ul>
+
+            <button class="action-btn">More Projects</button>
           </div>
+
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="join-us">
-      <div class="section-box">
-        <div class="content-wrap">
-          <h3 class="section-sub">join with us</h3>
-          <h2 class="section-title">Save Wildlife, Protect Nature</h2>
+  <!-- ================= JOIN US ================= -->
+  <section id="join-us">
+    <div class="section-box">
+      <div class="content-wrap text-center">
+        <h3 class="section-sub">Join With Us</h3>
+        <h2 class="section-title">Save Wildlife, Protect Nature</h2>
 
-          <div class="join-form">
-            <input type="text" class="input-1 i1" placeholder="Your Name" />
-            <input type="email" class="input-1 i2" placeholder="Your Email" />
-            <input type="text" class="input-1 i3" placeholder="Your Number" />
-            <input type="text" class="input-1 i4" placeholder="Your Address" />
-
-            <p>Membership</p>
-            <div class="checkbox-wrap">
-              <label><input type="checkbox" /> Individual</label>
-              <label><input type="checkbox" /> Family</label>
-              <label><input type="checkbox" /> Corporate</label>
+        <form class="join-form">
+          <div class="row g-3 justify-content-center w-100">
+            <div class="col-12 col-md-6">
+              <input type="text" class="input-1" placeholder="Your Name" required />
             </div>
-
-            <button class="join-btn">be a member</button>
+            <div class="col-12 col-md-6">
+              <input type="email" class="input-1" placeholder="Your Email" required />
+            </div>
+            <div class="col-12 col-md-6">
+              <input type="tel" class="input-1" placeholder="Your Number" />
+            </div>
+            <div class="col-12 col-md-6">
+              <input type="text" class="input-1" placeholder="Your Address" />
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="footer">
-      <div class="section-box">
-        <div class="footer-grid">
-          <div>
+          <p>Membership</p>
+          <div class="checkbox-wrap">
+            <label><input type="checkbox" /> Individual</label>
+            <label><input type="checkbox" /> Family</label>
+            <label><input type="checkbox" /> Corporate</label>
+          </div>
+
+          <button type="submit" class="join-btn">Be a Member</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <section id="footer">
+    <div class="section-box">
+      <div class="container-fluid">
+        <div class="row footer-grid g-5">
+
+          <div class="col-12 col-md-4">
             <h3>Quick Links</h3>
-
-            <a class="footer-items f1">Home</a>
-            <a class="footer-items f2">about us</a>
-            <a class="footer-items f3">projects</a>
-            <a class="footer-items f4">resources</a>
-            <a class="footer-items f5">blog</a>
-            <a class="footer-items f6">contacts</a>
+            <a class="footer-items" href="#hero">Home</a>
+            <a class="footer-items" href="#about">About Us</a>
+            <a class="footer-items" href="#projects">Projects</a>
+            <a class="footer-items" href="#">Resources</a>
+            <a class="footer-items" href="#">Blog</a>
+            <a class="footer-items" href="#join-us">Contact</a>
           </div>
 
-          <div>
+          <div class="col-12 col-md-4">
             <h3>Contacts</h3>
-
-            <a class="footer-items f1">+1 (800) 555-WILD (9453)</a>
-            <a class="footer-items f2">+1 (888) 999-SAVE (7283)</a>
-            <a class="footer-items f3">info@wildlifeguardians.org</a>
-            <a class="footer-items f4"
-              >1234 Forest Drive, Green Valley, CA 90210</a
-            >
+            <a class="footer-items" href="tel:+18005559453">+1 (800) 555-WILD (9453)</a>
+            <a class="footer-items" href="tel:+18889997283">+1 (888) 999-SAVE (7283)</a>
+            <a class="footer-items" href="mailto:info@wildguardians.org">info@wildguardians.org</a>
+            <a class="footer-items">1234 Forest Drive, Green Valley, CA 90210</a>
           </div>
 
-          <div>
+          <div class="col-12 col-md-4">
             <h3>Socials</h3>
-
-            <a class="footer-items f1">facebook</a>
-            <a class="footer-items f2">youtubr</a>
-            <a class="footer-items f3">instagram</a>
-            <a class="footer-items f4">linkedin</a>
-            <a class="footer-items f5">twitter</a>
+            <a class="footer-items" href="#" target="_blank" rel="noreferrer">Facebook</a>
+            <a class="footer-items" href="#" target="_blank" rel="noreferrer">YouTube</a>
+            <a class="footer-items" href="#" target="_blank" rel="noreferrer">Instagram</a>
+            <a class="footer-items" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="footer-items" href="#" target="_blank" rel="noreferrer">Twitter</a>
           </div>
+
         </div>
 
-        <p class="copyrights">© codegenweb | all rights reserved</p>
+        <p class="copyrights">© WildGuardians | All Rights Reserved</p>
       </div>
-    </section>
-  </body>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
